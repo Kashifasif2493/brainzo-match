@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Backup & Data Extraction Rules for Brainzo Match
+    Target Path: app/src/main/res/xml/backup_rules.xml
+    Compatible with Android 12 (API 31)+ (data_extraction_rules) and legacy Auto Backup down to Min SDK 24.
+    
+    Privacy & Child Protection Guidelines (COPPA & Google Play Families Policy):
+    - EXCLUDED: Sensitive parental security PIN hashes, adult challenge cache, Google Play purchase receipts/tokens.
+    - EXCLUDED: Temporary cache files, WebView storage, and ad session identifier caches.
+    - INCLUDED: Safe child game progress (unlocked levels, puzzle stars, non-identifying wardrobe equipped states).
+-->
+<data-extraction-rules>
+    <!-- Cloud Backup Rules (Android 12+ / API 31+) -->
+    <cloud-backup>
+        <!-- Include Room database containing child game level progression & stars -->
+        <include domain="database" path="brainzo_match_database.db" />
+        <include domain="database" path="brainzo_match_database.db-wal" />
+        <include domain="database" path="brainzo_match_database.db-shm" />
+
+        <!-- Exclude sensitive parental controls table / PIN hashes and billing state -->
+        <exclude domain="sharedpref" path="parental_security_prefs.xml" />
+        <exclude domain="sharedpref" path="play_billing_security.xml" />
+        <exclude domain="sharedpref" path="admob_identifiers.xml" />
+
+        <!-- Exclude temporary cache directories to save bandwidth and preserve privacy -->
+        <exclude domain="root" path="cache" />
+        <exclude domain="root" path="code_cache" />
+        <exclude domain="external" path="." />
+    </cloud-backup>
+
+    <!-- Device-to-Device Migration Transfer Rules (e.g. child getting a new tablet) -->
+    <device-transfer>
+        <!-- Preserve gameplay levels and earned stars across family devices -->
+        <include domain="database" path="brainzo_match_database.db" />
+        <include domain="database" path="brainzo_match_database.db-wal" />
+        <include domain="database" path="brainzo_match_database.db-shm" />
+
+        <!-- Exclude PIN credentials and ad tokens during device transfer -->
+        <exclude domain="sharedpref" path="parental_security_prefs.xml" />
+        <exclude domain="sharedpref" path="play_billing_security.xml" />
+        <exclude domain="root" path="cache" />
+    </device-transfer>
+</data-extraction-rules>

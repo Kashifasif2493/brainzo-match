@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application Brand & Identity -->
+    <string name="app_name">Brainzo Match</string>
+    <string name="app_tagline">Match. Think. Win!</string>
+    <string name="app_description">Premium Kids Brain Training &amp; Puzzle Gaming App</string>
+    <string name="package_name">com.brainzomatch.app</string>
+
+    <!-- Navigation & Bottom Tabs -->
+    <string name="nav_home">Home</string>
+    <string name="nav_games">Games</string>
+    <string name="nav_quests">Quests</string>
+    <string name="nav_gifts">Gifts</string>
+    <string name="nav_parents">Parents</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_vip">VIP Pass</string>
+
+    <!-- Common UI Controls & Actions -->
+    <string name="action_back">Back</string>
+    <string name="action_close">Close</string>
+    <string name="action_next">Next</string>
+    <string name="action_play_again">Play Again</string>
+    <string name="action_get_rewards">Get Rewards</string>
+    <string name="action_claim">Claim Reward</string>
+    <string name="action_unlock">Unlock</string>
+    <string name="action_save">Save Changes</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Game 1: Safari Memory Match -->
+    <string name="game_title_memory">Game 1: Memory Match</string>
+    <string name="game_desc_memory">Flip cards to match playful safari animals and test your photographic memory!</string>
+    <string name="hud_pairs_found">Pairs Found: %1$d / %2$d</string>
+    <string name="animal_lion">Lion</string>
+    <string name="animal_elephant">Elephant</string>
+    <string name="animal_zebra">Zebra</string>
+    <string name="animal_giraffe">Giraffe</string>
+    <string name="animal_monkey">Monkey</string>
+    <string name="animal_hippo">Hippo</string>
+    <string name="animal_panda">Panda</string>
+    <string name="animal_tiger">Tiger</string>
+
+    <!-- Game 2: Math Blast Rocket Race -->
+    <string name="game_title_math">Game 2: Math Blast</string>
+    <string name="game_desc_math">Solve quick arithmetic questions to fuel your rocket and win the cosmic race!</string>
+    <string name="hud_player_speed">Player Speed: %1$d%%</string>
+    <string name="hud_rival_speed">Rival Speed: %1$d%%</string>
+    <string name="math_question_format">%1$d %2$s %3$d = ?</string>
+
+    <!-- Game 3: Find The Difference -->
+    <string name="game_title_difference">Game 3: Find The Difference</string>
+    <string name="game_desc_difference">Spot all hidden differences between the twin pictures before time runs out!</string>
+    <string name="hud_differences_found">Found: %1$d / %2$d</string>
+    <string name="hint_sherlock_btn">🔍 Use Sherlock Hint (%1$d Left)</string>
+    <string name="scene_forest_picnic">Forest Picnic Mystery</string>
+    <string name="scene_royal_kingdom">Royal Kingdom Fair</string>
+    <string name="scene_cosmic_galaxy">Cosmic Galaxy Voyage</string>
+
+    <!-- Game 4: Jigsaw Puzzle Quest -->
+    <string name="game_title_jigsaw">Game 4: Jigsaw Quest</string>
+    <string name="game_desc_jigsaw">Drag, snap, and assemble colorful jigsaw puzzle pieces into a vibrant scene!</string>
+    <string name="hud_jigsaw_pieces">Pieces: %1$d / %2$d</string>
+    <string name="hint_autosnap_btn">🧩 Auto-Snap Next Piece (%1$d Left)</string>
+    <string name="theme_jungle_kingdom">Jungle Kingdom</string>
+    <string name="theme_royal_castle">Royal Castle Quest</string>
+    <string name="theme_deep_space">Deep Space Odyssey</string>
+
+    <!-- Game 5: Color & Shape Match -->
+    <string name="game_title_shapes">Game 5: Color &amp; Shape Match</string>
+    <string name="game_desc_shapes">Categorize geometric figures by color and geometry into matching dimensional portals!</string>
+    <string name="hud_portals_completed">Portals: %1$d / %2$d</string>
+    <string name="hint_shape_btn">💡 Use Hint (%1$d Left)</string>
+    <string name="shape_matched_badge">MATCHED</string>
+    <string name="shape_circle">Circle</string>
+    <string name="shape_square">Square</string>
+    <string name="shape_triangle">Triangle</string>
+    <string name="shape_star">Star</string>
+    <string name="shape_heart">Heart</string>
+    <string name="shape_diamond">Diamond</string>
+    <string name="shape_hexagon">Hexagon</string>
+    <string name="color_ruby_red">Ruby Red</string>
+    <string name="color_ocean_blue">Ocean Blue</string>
+    <string name="color_emerald_green">Emerald Green</string>
+    <string name="color_sun_yellow">Sun Yellow</string>
+    <string name="color_royal_purple">Royal Purple</string>
+    <string name="color_tangerine_orange">Tangerine Orange</string>
+
+    <!-- Game 6: Word Wizard -->
+    <string name="game_title_word">Game 6: Word Wizard</string>
+    <string name="game_desc_word">Spell target words using phonics letter blocks from your magic wizard rack!</string>
+    <string name="hint_wizard_btn">🪄 Wizard Hint (%1$d Left)</string>
+    <string name="word_category_animals">Jungle Animals</string>
+    <string name="word_category_forest">Forest Friends</string>
+    <string name="word_category_fruits">Delicious Fruits</string>
+    <string name="word_category_space">Space Voyage</string>
+
+    <!-- Game 7: Hidden Objects -->
+    <string name="game_title_hidden">Game 7: Hidden Objects</string>
+    <string name="game_desc_hidden">Search the detailed illustrated landscape to discover all cleverly concealed items!</string>
+    <string name="hud_items_found">Found: %1$d / %2$d</string>
+    <string name="hint_radar_btn">📡 Radar Scan Hint (%1$d Left)</string>
+    <string name="scene_treehouse_library">Enchanted Treehouse Library</string>
+    <string name="scene_sunken_galleon">Sunken Galleon Treasury</string>
+    <string name="scene_crystal_caverns">Secret Crystal Caverns</string>
+
+    <!-- Game 8: Quick Brain Blitz -->
+    <string name="game_title_blitz">Game 8: Quick Brain Blitz</string>
+    <string name="game_desc_blitz">Solve rapid logic patterns and matrix questions before the 15-second countdown ends!</string>
+    <string name="hud_blitz_round">Round %1$d / %2$d</string>
+    <string name="hud_timer_seconds">%1$ds</string>
+    <string name="blitz_prompt_pattern">What completes the logic pattern?</string>
+
+    <!-- HUD & Victory Overlays -->
+    <string name="hud_score_label">⭐ Score: %1$d</string>
+    <string name="hud_combo_label">🔥 %1$dx Combo</string>
+    <string name="victory_title">🎉 LEVEL COMPLETE!</string>
+    <string name="victory_stars_summary">⭐⭐⭐ (%1$d / 3 Stars Earned)</string>
+    <string name="victory_final_score">Final Score: %1$d</string>
+    <string name="coins_earned_format">+%1$d Coins</string>
+    <string name="stars_earned_format">+%1$d Stars</string>
+
+    <!-- Parental Gate & Verification -->
+    <string name="parent_gate_title">Adults Only: Security Gate</string>
+    <string name="parent_gate_prompt">Adults Only: What is %1$d × %2$d ?</string>
+    <string name="parent_gate_input_hint">Enter answer</string>
+    <string name="parent_gate_error">Incorrect answer. Please ask a grown-up to help.</string>
+    <string name="parent_pin_title">Parent Security PIN</string>
+    <string name="parent_pin_hint">Enter 4-digit PIN</string>
+
+    <!-- Parental Controls Dashboard -->
+    <string name="parent_dashboard_title">Parent Analytics &amp; Safety</string>
+    <string name="parent_screen_time_title">Daily Screen Time Limit</string>
+    <string name="parent_screen_time_desc">Enforce healthy screen time habits for child focus</string>
+    <string name="parent_screen_time_status">%1$d of %2$d Minutes Used Today</string>
+    <string name="parent_bedtime_lock_title">Bedtime Lockout</string>
+    <string name="parent_bedtime_lock_desc">Prevent app launch between 8:00 PM and 7:00 AM</string>
+    <string name="parent_sensory_title">Sensory &amp; Audio Settings</string>
+    <string name="parent_music_volume">Music Volume: %1$d%%</string>
+    <string name="parent_sfx_volume">Sound Effects: %1$d%%</string>
+    <string name="parent_haptics">Tactile Haptic Feedback</string>
+
+    <!-- Brainzo VIP Membership -->
+    <string name="vip_title">Brainzo VIP Gold Pass</string>
+    <string name="vip_tagline">Unlimited learning adventures for young thinkers</string>
+    <string name="vip_feature_adfree">100% Ad-Free Pure Gameplay</string>
+    <string name="vip_feature_unlimited_levels">Unlimited Access to All 8 Game Modes</string>
+    <string name="vip_feature_avatars">Exclusive VIP Avatars &amp; Royal Wardrobe Hats</string>
+    <string name="vip_feature_hints">Infinite Game Hints &amp; Radar Boosters</string>
+    <string name="vip_plan_monthly_title">Monthly Explorer</string>
+    <string name="vip_plan_monthly_price">$4.99 / month</string>
+    <string name="vip_plan_annual_title">Annual Champion (Save 40%)</string>
+    <string name="vip_plan_annual_price">$35.99 / year</string>
+    <string name="vip_cta_subscribe">UPGRADE TO VIP GOLD</string>
+    <string name="vip_restore_purchase">Restore Purchases</string>
+
+    <!-- Player Profile & Wardrobe -->
+    <string name="profile_title">Player Profile &amp; Wardrobe</string>
+    <string name="profile_default_name">Leo the Thinker</string>
+    <string name="profile_coins_badge">Coins: %1$d</string>
+    <string name="profile_stars_badge">Stars: %1$d</string>
+    <string name="profile_streak_days">%1$d Days Streak</string>
+    <string name="wardrobe_equipped">EQUIPPED</string>
+    <string name="wardrobe_locked">LOCKED</string>
+
+    <!-- Google AdMob Compliance -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_test_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_test_id">ca-app-pub-3940256099942544/1033173712</string>
+</resources>

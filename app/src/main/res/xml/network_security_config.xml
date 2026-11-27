@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Network Security Configuration for Brainzo Match
+    Target Path: app/src/main/res/xml/network_security_config.xml
+    Target SDK: Android 14 (API 34) | Min SDK: 24
+    
+    Security & COPPA Compliance Rules:
+    1. Globally disallows cleartext HTTP traffic across the entire application (cleartextTrafficPermitted="false").
+    2. Enforces encrypted HTTPS / TLS v1.2+ for all outgoing network connections.
+    3. Trusts system CA certificates and allows user-installed certs only in debug builds if configured.
+-->
+<network-security-config>
+    <!-- Global Base Configuration: Strict HTTPS enforcement across all endpoints -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust Android system pre-installed Certificate Authorities -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Specific domain rules for Google AdMob and Google Play Services -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">google.com</domain>
+        <domain includeSubdomains="true">googleapis.com</domain>
+        <domain includeSubdomains="true">google-analytics.com</domain>
+        <domain includeSubdomains="true">googlesyndication.com</domain>
+        <domain includeSubdomains="true">doubleclick.net</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,37 @@
+package com.brainzomatch.app.core.data.local
+
+import androidx.room.TypeConverter
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+
+/**
+ * Room TypeConverters for list fields in BrainzoDatabase entities.
+ * File Path: app/src/main/java/com/brainzomatch/app/core/data/local/BrainzoTypeConverters.kt
+ */
+class BrainzoTypeConverters {
+    private val gson = Gson()
+
+    @TypeConverter
+    fun fromStringList(value: List<String>?): String {
+        return gson.toJson(value ?: emptyList<String>())
+    }
+
+    @TypeConverter
+    fun toStringList(value: String?): List<String> {
+        if (value.isNullOrEmpty()) return emptyList()
+        val listType = object : TypeToken<List<String>>() {}.type
+        return gson.fromJson(value, listType) ?: emptyList()
+    }
+
+    @TypeConverter
+    fun fromIntList(value: List<Int>?): String {
+        return gson.toJson(value ?: emptyList<Int>())
+    }
+
+    @TypeConverter
+    fun toIntList(value: String?): List<Int> {
+        if (value.isNullOrEmpty()) return emptyList()
+        val listType = object : TypeToken<List<Int>>() {}.type
+        return gson.fromJson(value, listType) ?: emptyList()
+    }
+}

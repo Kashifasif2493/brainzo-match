@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme for Brainzo Match -->
+    <!-- Compatible with Android 14 (API 34) down to Min SDK 24 -->
+    <!-- Uses Theme.Material3.DayNight.NoActionBar for full Jetpack Compose edge-to-edge support -->
+    <style name="Theme.BrainzoMatch" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Primary & Secondary Palette -->
+        <item name="colorPrimary">@color/brainzo_purple_primary</item>
+        <item name="colorPrimaryVariant">@color/brainzo_purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/brainzo_mint_success</item>
+        <item name="colorSecondaryVariant">@color/brainzo_sky_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background & Surface Coloring -->
+        <item name="android:colorBackground">@color/brainzo_bg_light</item>
+        <item name="colorSurface">@color/brainzo_surface</item>
+        <item name="colorOnSurface">@color/brainzo_text_dark</item>
+
+        <!-- System Status Bar & Navigation Bar Configuration -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/nav_bar_color</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Window Edge-to-Edge & Performance Attributes -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@color/brainzo_bg_light</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+    <!-- Splash / Launcher Theme to Prevent Blank White Screen During Cold App Startup -->
+    <style name="Theme.BrainzoMatch.Splash" parent="Theme.BrainzoMatch">
+        <item name="android:windowBackground">@color/brainzo_bg_light</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/nav_bar_color</item>
+    </style>
+</resources>

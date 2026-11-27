@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Brainzo Match Master Adaptive Launcher Icon Definition
+    Target Path: app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+    Also used for: app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+    API Level: API 26+ (Android 8.0 Oreo to Android 14 API 34)
+    Backward Compatibility: Referenced by AndroidManifest.xml (android:icon="@mipmap/ic_launcher")
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background: Brand Purple Vector with tonal accents (#7C3AED) -->
+    <background android:drawable="@drawable/ic_launcher_background" />
+
+    <!-- Foreground: Brainzo Match smiling brain mascot & gold star, inside safe 72dp zone -->
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+
+    <!-- Optional monochrome layer for Android 13+ (API 33) themed app icons -->
+    <monochrome android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

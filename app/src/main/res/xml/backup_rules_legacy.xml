@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Legacy Auto Backup Configuration for Brainzo Match
+    Target Path: app/src/main/res/xml/backup_rules_legacy.xml
+    Compatible with Android 6.0 to Android 11 (API 23 - API 30).
+    Referenced via android:fullBackupContent="@xml/backup_rules_legacy"
+    
+    Child Privacy & COPPA Compliance:
+    - INCLUDES: Room database with safe child gameplay progress (levels, stars, wardrobe).
+    - EXCLUDES: Parental security PIN hashes, billing tokens/receipts, ad session data, and cache.
+-->
+<full-backup-content>
+    <!-- Include Room database containing child game progression & stars -->
+    <include domain="database" path="brainzo_match_database.db" />
+    <include domain="database" path="brainzo_match_database.db-wal" />
+    <include domain="database" path="brainzo_match_database.db-shm" />
+
+    <!-- Exclude sensitive parental controls table / PIN hashes and billing state -->
+    <exclude domain="sharedpref" path="parental_security_prefs.xml" />
+    <exclude domain="sharedpref" path="play_billing_security.xml" />
+    <exclude domain="sharedpref" path="admob_identifiers.xml" />
+
+    <!-- Exclude temporary cache directories to save bandwidth and preserve child privacy -->
+    <exclude domain="root" path="cache" />
+    <exclude domain="root" path="code_cache" />
+    <exclude domain="external" path="." />
+</full-backup-content>

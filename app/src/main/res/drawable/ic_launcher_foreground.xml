@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Brainzo Match Adaptive Launcher Icon Foreground Vector
+    Target Path: app/src/main/res/drawable/ic_launcher_foreground.xml
+    Format: Android Vector Drawable (108dp x 108dp)
+    Safe Zone: All essential graphics are strictly contained within the inner 66dp - 72dp diameter safe viewport zone
+    Visual Content: Cute smiling 3D-style Brain mascot, glowing cheeks, thinking spark, and gold achievement star
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Group centered at (54, 54) inside the 72dp adaptive icon safe mask zone -->
+    <group
+        android:name="brainzo_mascot_group">
+
+        <!-- Outer Soft Drop Shadow for Mascot -->
+        <path
+            android:fillAlpha="0.22"
+            android:fillColor="#2E1065"
+            android:pathData="M32,68 C32,77 42,80 54,80 C66,80 76,77 76,68 C76,62 70,58 54,58 C38,58 32,62 32,68 Z" />
+
+        <!-- Left Brain Hemisphere (Playful organic lobes) -->
+        <path
+            android:fillColor="#DDD6FE"
+            android:pathData="M52,36 C46,33 36,36 34,44 C31,48 31,56 36,61 C34,65 37,71 43,72 C48,73 52,70 52,66 Z" />
+
+        <!-- Left Brain Hemisphere Shading & Texture -->
+        <path
+            android:fillColor="#C4B5FD"
+            android:pathData="M52,38 C47,35 39,38 37,45 C35,49 35,55 39,59 C43,59 47,56 49,52 C50,47 51,42 52,38 Z" />
+
+        <!-- Right Brain Hemisphere (Playful organic lobes) -->
+        <path
+            android:fillColor="#EDE9FE"
+            android:pathData="M54,36 C60,33 70,36 72,44 C75,48 75,56 70,61 C72,65 69,71 63,72 C58,73 54,70 54,66 Z" />
+
+        <!-- Right Brain Hemisphere Highlight -->
+        <path
+            android:fillColor="#DDD6FE"
+            android:pathData="M54,38 C59,35 67,38 69,45 C71,49 71,55 67,59 C63,59 59,56 57,52 C56,47 55,42 54,38 Z" />
+
+        <!-- Center Brain Seam / Groove Divider -->
+        <path
+            android:fillColor="#8B5CF6"
+            android:strokeColor="#8B5CF6"
+            android:strokeWidth="1.8"
+            android:strokeLineCap="round"
+            android:pathData="M53,37 C52,44 54,54 53,68" />
+
+        <!-- Cute Big Eyes (Child-friendly expressiveness) -->
+        <!-- Left Eye White & Pupil -->
+        <path
+            android:fillColor="#1E1B4B"
+            android:pathData="M44,52 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M42.5,50.5 m-1.2,0 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0" />
+
+        <!-- Right Eye White & Pupil -->
+        <path
+            android:fillColor="#1E1B4B"
+            android:pathData="M62,52 m-3.5,0 a3.5,3.5 0 1,0 7,0 a3.5,3.5 0 1,0 -7,0" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M60.5,50.5 m-1.2,0 a1.2,1.2 0 1,0 2.4,0 a1.2,1.2 0 1,0 -2.4,0" />
+
+        <!-- Cheerful Rosy Cheeks (Coral / Pink Tonal glow) -->
+        <path
+            android:fillAlpha="0.55"
+            android:fillColor="#F472B6"
+            android:pathData="M37,56 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+        <path
+            android:fillAlpha="0.55"
+            android:fillColor="#F472B6"
+            android:pathData="M69,56 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0" />
+
+        <!-- Happy Curved Smiling Mouth -->
+        <path
+            android:strokeColor="#1E1B4B"
+            android:strokeWidth="2.2"
+            android:strokeLineCap="round"
+            android:pathData="M49,60 Q53,65 57,60" />
+
+        <!-- Golden Spark Star atop Mascot (Signifying achievement & learning power) -->
+        <!-- Star Base Geometry -->
+        <path
+            android:fillColor="#F59E0B"
+            android:pathData="M53,24 L55,29 L60,30 L56,33 L57,38 L53,35 L49,38 L50,33 L46,30 L51,29 Z" />
+
+        <!-- Star Glow Highlight -->
+        <path
+            android:fillColor="#FDE68A"
+            android:pathData="M53,26 L54.2,29.5 L57.5,30 L54.8,32 L55.5,35.5 L53,33.5 Z" />
+
+        <!-- Magic Idea Sparkle Dots -->
+        <path
+            android:fillColor="#FDE68A"
+            android:pathData="M35,33 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+        <path
+            android:fillColor="#FDE68A"
+            android:pathData="M71,32 m-1.5,0 a1.5,1.5 0 1,0 3,0 a1.5,1.5 0 1,0 -3,0" />
+
+    </group>
+
+</vector>
