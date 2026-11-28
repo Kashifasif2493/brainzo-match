@@ -117,6 +117,9 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
+    // --- Material Components (XML themes such as Theme.Material3.DayNight.NoActionBar) ---
+    implementation("com.google.android.material:material:1.12.0")
+
     // --- Navigation Compose ---
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
