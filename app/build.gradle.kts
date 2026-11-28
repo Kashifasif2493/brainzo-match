@@ -131,8 +131,8 @@ dependencies {
 
     // --- Kotlin Coroutines ---
     val coroutinesVersion = "1.8.0"
-    implementation("kotlinx.coroutines:kotlinx-coroutines-core:$coroutinesVersion")
-    implementation("kotlinx.coroutines:kotlinx-coroutines-android:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
 
     // --- Google Mobile Ads SDK (COPPA & Families Compliant) ---
     implementation("com.google.android.gms:play-services-ads:23.0.0")
