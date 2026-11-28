@@ -204,10 +204,10 @@ fun ParentDashboardScreen(
                                 onClick = {
                                     val numeric = answerInput.trim().toIntOrNull()
                                     if (numeric != null && ParentalVerification.verifyAnswer(numeric, currentChallenge)) {
-                                        audioManager.playSound(SoundEffect.REWARD_UNLOCK)
+                                        audioManager.playSound(SoundEffect.STAR_BURST)
                                         isUnlocked = true
                                     } else {
-                                        audioManager.playSound(SoundEffect.WRONG_ANSWER)
+                                        audioManager.playSound(SoundEffect.WRONG_TRY_AGAIN)
                                         gateError = true
                                         currentChallenge = ParentalVerification.generateChallenge()
                                         answerInput = ""

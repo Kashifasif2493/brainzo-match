@@ -40,6 +40,14 @@ object ParentalVerification {
         return parsed == challenge.expectedAnswer
     }
 
+
+    /** Short name used by the Parent Dashboard and VIP screens. */
+    fun generateChallenge(): ParentalMathChallenge = generateAdultVerificationQuestion()
+
+    /** Checks a numeric answer against the challenge. */
+    fun verifyAnswer(answer: Int, challenge: ParentalMathChallenge): Boolean =
+        answer == challenge.expectedAnswer
+
     /**
      * Verifies against a 4-digit numeric parental PIN.
      */

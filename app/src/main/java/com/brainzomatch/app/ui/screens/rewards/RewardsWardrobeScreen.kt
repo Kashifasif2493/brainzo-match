@@ -260,7 +260,7 @@ fun RewardsWardrobeScreen(
                                                     coroutineScope.launch {
                                                         val deducted = app.repository.deductCoins(item.costCoins)
                                                         if (deducted) {
-                                                            app.audioManager.playSound(SoundEffect.REWARD_UNLOCK)
+                                                            app.audioManager.playSound(SoundEffect.STAR_BURST)
                                                             val updatedList = unlockedItemIds + item.id
                                                             val current = profileState
                                                             if (current != null) {

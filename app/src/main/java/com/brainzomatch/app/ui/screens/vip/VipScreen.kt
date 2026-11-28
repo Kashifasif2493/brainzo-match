@@ -249,7 +249,7 @@ fun VipScreen(
                         if (activity != null) {
                             isBillingLoading = true
                             billingStatusMessage = "Connecting to Google Play Billing..."
-                            billingManager.launchBillingFlow(activity, "vip_monthly")
+                            billingManager.launchSubscriptionPurchase(activity, com.brainzomatch.app.core.billing.BillingManager.PRODUCT_VIP_MONTHLY)
                             isBillingLoading = false
                         } else {
                             billingStatusMessage = "Unable to launch Google Play on non-activity context."
@@ -368,12 +368,12 @@ fun VipScreen(
                     onClick = {
                         val numeric = answerInput.trim().toIntOrNull()
                         if (numeric != null && ParentalVerification.verifyAnswer(numeric, currentChallenge)) {
-                            audioManager.playSound(SoundEffect.REWARD_UNLOCK)
+                            audioManager.playSound(SoundEffect.STAR_BURST)
                             showParentGateDialog = false
                             pendingBillingAction?.invoke()
                             pendingBillingAction = null
                         } else {
-                            audioManager.playSound(SoundEffect.WRONG_ANSWER)
+                            audioManager.playSound(SoundEffect.WRONG_TRY_AGAIN)
                             gateError = true
                             currentChallenge = ParentalVerification.generateChallenge()
                             answerInput = ""

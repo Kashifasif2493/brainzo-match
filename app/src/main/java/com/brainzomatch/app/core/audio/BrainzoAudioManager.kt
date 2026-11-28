@@ -178,6 +178,17 @@ class BrainzoAudioManager(private val context: Context) {
         }
     }
 
+    /** Music volume from 0.0 to 1.0 (used by the Parent Dashboard slider). */
+    fun setMusicVolume(volume: Float) {
+        masterMusicVolume = volume.coerceIn(0f, 1f)
+        bgmPlayer?.setVolume(masterMusicVolume, masterMusicVolume)
+    }
+
+    /** Sound-effects volume from 0.0 to 1.0 (used by the Parent Dashboard slider). */
+    fun setSfxVolume(volume: Float) {
+        masterSfxVolume = volume.coerceIn(0f, 1f)
+    }
+
     fun updateSettings(musicVolPercent: Int, sfxVolPercent: Int, haptics: Boolean) {
         masterMusicVolume = (musicVolPercent / 100f).coerceIn(0f, 1f)
         masterSfxVolume = (sfxVolPercent / 100f).coerceIn(0f, 1f)
