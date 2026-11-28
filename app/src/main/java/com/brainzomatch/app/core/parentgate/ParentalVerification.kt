@@ -12,7 +12,11 @@ data class ParentalMathChallenge(
     val factorB: Int,
     val expectedAnswer: Int,
     val displayPrompt: String
-)
+) {
+    /** Text shown on the Parent Dashboard and VIP verification dialogs. */
+    val questionText: String
+        get() = displayPrompt
+}
 
 object ParentalVerification {
 
